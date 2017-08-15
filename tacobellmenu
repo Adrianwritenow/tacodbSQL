@@ -1,0 +1,43 @@
+quesirito
+
+quesilda
+chalupas
+cinamion twists
+cheesy fiesta potatoes
+nacho & cheese
+cheesy bean and rice burrito
+shreddid mini quesilidia
+quesildila
+dorito locos taco
+taco bowl
+
+--KEY--
+
+
+
+CREATE TABLE franchise(
+  franchise_id  SERIAL PRIMARY KEY,
+  rating FLOAT,
+  price FLOAT,
+  name VARCHAR(100) NOT NULL,
+  authenticity INTEGER
+);
+
+
+--
+INSERT INTO franchise (rating, price, name, authenticity)
+VALUES(3.8,2.79,'Taco Bell')
+
+
+
+INSERT INTO location (street, city, zip)
+VALUES('4225 east colonial drive','Orlando',32803),
+      ('690 South Orlando ave','Winter Park',32789),
+      ('2600 Orlando West drive','Orlando',32808)
+
+
+INSERT INTO menu (picture, course, price, name)
+VALUES('http://cdn.foodbeast.com.s3.amazonaws.com/content/wp-content/uploads/2013/07/taco-bell-cinnamon-twists.jpg','Dessert',.89,'cinnamon twists'),
+      ('https://www.munchiesgrubclub.com/wp-content/uploads/2016/08/pdp_cheesy_fiesta_potatoes.jpg','Appetizer',1.29,'cheesy fiesta potatoes'),
+      ('http://www.lifeaslars.com/journal/wp-content/uploads/2015/05/pdp_quesarito.jpg','Main course',2.69,'Beef quesarito'),
+      ('http://4.bp.blogspot.com/-1tNpvNnSE2c/UoI7DhqjzOI/AAAAAAAAZRE/-uTZ7dHwuYo/s1600/Taco-Bell-Cinnabon-Delights.jpg','Desert',1.00,'cinnabon delights')
